@@ -35,6 +35,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = [.horizontal]
 
         // Run the view's session
         sceneView.session.run(configuration)
@@ -56,10 +57,26 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        if anchor is ARPlaneAnchor {
+            if arc4random_uniform(2) == 0 {
+                let treeNode = SKSpriteNode(texture: SKTexture(image: #imageLiteral(resourceName: "tree")))
+                return treeNode
+            } else {
+                let bushNode = SKSpriteNode(texture: SKTexture(image: #imageLiteral(resourceName: "back")))
+                bushNode.zPosition = 1.0
+                let dog = DuckHuntDog()
+                dog.position = CGPoint(x: -bushNode.frame.width * 0.5, y: -bushNode.frame.height * 0.5 + dog.frame.height)
+                dog.zPosition = 2.0
+                bushNode.addChild(dog)
+                dog.playOpenning()
+                return bushNode
+            }
+        } else {
+            let duck = DuckHuntDuck()
+            duck.fly()
+            return duck
+        }
+        
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {

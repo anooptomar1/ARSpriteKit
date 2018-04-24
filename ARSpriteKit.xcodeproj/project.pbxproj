@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD202D53208D226E0006AE83 /* duck.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CDD881F6208D1162000FF01D /* duck.atlas */; };
+		CD202D54208D22710006AE83 /* dogSniff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CDD881F5208D115D000FF01D /* dogSniff.atlas */; };
+		CD202D55208D22740006AE83 /* dogJump.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CDD881F4208D1158000FF01D /* dogJump.atlas */; };
+		CD202D56208D22770006AE83 /* otherDuck.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CDD881F3208D1154000FF01D /* otherDuck.atlas */; };
+		CD202D57208D227A0006AE83 /* dogDuck.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CDD881F2208D114E000FF01D /* dogDuck.atlas */; };
+		CD202D59208D26410006AE83 /* DuckHuntDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD202D58208D26410006AE83 /* DuckHuntDuck.swift */; };
+		CD202D5B208D54F00006AE83 /* DuckHuntDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD202D5A208D54F00006AE83 /* DuckHuntDog.swift */; };
 		CDD881B9208BE717000FF01D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD881B8208BE717000FF01D /* AppDelegate.swift */; };
 		CDD881BB208BE717000FF01D /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CDD881BA208BE717000FF01D /* Scene.sks */; };
 		CDD881BD208BE717000FF01D /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD881BC208BE717000FF01D /* Scene.swift */; };
@@ -17,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD202D58208D26410006AE83 /* DuckHuntDuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckHuntDuck.swift; sourceTree = "<group>"; };
+		CD202D5A208D54F00006AE83 /* DuckHuntDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckHuntDog.swift; sourceTree = "<group>"; };
 		CDD881B5208BE717000FF01D /* ARSpriteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARSpriteKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD881B8208BE717000FF01D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDD881BA208BE717000FF01D /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -26,6 +35,11 @@
 		CDD881C3208BE718000FF01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD881C6208BE718000FF01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD881C8208BE718000FF01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD881F2208D114E000FF01D /* dogDuck.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dogDuck.atlas; sourceTree = "<group>"; };
+		CDD881F3208D1154000FF01D /* otherDuck.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = otherDuck.atlas; sourceTree = "<group>"; };
+		CDD881F4208D1158000FF01D /* dogJump.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dogJump.atlas; sourceTree = "<group>"; };
+		CDD881F5208D115D000FF01D /* dogSniff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dogSniff.atlas; sourceTree = "<group>"; };
+		CDD881F6208D1162000FF01D /* duck.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = duck.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +76,15 @@
 				CDD881BA208BE717000FF01D /* Scene.sks */,
 				CDD881BC208BE717000FF01D /* Scene.swift */,
 				CDD881BE208BE717000FF01D /* ViewController.swift */,
+				CD202D58208D26410006AE83 /* DuckHuntDuck.swift */,
+				CD202D5A208D54F00006AE83 /* DuckHuntDog.swift */,
 				CDD881C0208BE717000FF01D /* Main.storyboard */,
 				CDD881C3208BE718000FF01D /* Assets.xcassets */,
+				CDD881F6208D1162000FF01D /* duck.atlas */,
+				CDD881F5208D115D000FF01D /* dogSniff.atlas */,
+				CDD881F4208D1158000FF01D /* dogJump.atlas */,
+				CDD881F3208D1154000FF01D /* otherDuck.atlas */,
+				CDD881F2208D114E000FF01D /* dogDuck.atlas */,
 				CDD881C5208BE718000FF01D /* LaunchScreen.storyboard */,
 				CDD881C8208BE718000FF01D /* Info.plist */,
 			);
@@ -130,8 +151,13 @@
 			files = (
 				CDD881BB208BE717000FF01D /* Scene.sks in Resources */,
 				CDD881C7208BE718000FF01D /* LaunchScreen.storyboard in Resources */,
+				CD202D53208D226E0006AE83 /* duck.atlas in Resources */,
+				CD202D56208D22770006AE83 /* otherDuck.atlas in Resources */,
+				CD202D54208D22710006AE83 /* dogSniff.atlas in Resources */,
+				CD202D57208D227A0006AE83 /* dogDuck.atlas in Resources */,
 				CDD881C4208BE718000FF01D /* Assets.xcassets in Resources */,
 				CDD881C2208BE717000FF01D /* Main.storyboard in Resources */,
+				CD202D55208D22740006AE83 /* dogJump.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD202D5B208D54F00006AE83 /* DuckHuntDog.swift in Sources */,
 				CDD881BF208BE717000FF01D /* ViewController.swift in Sources */,
 				CDD881BD208BE717000FF01D /* Scene.swift in Sources */,
+				CD202D59208D26410006AE83 /* DuckHuntDuck.swift in Sources */,
 				CDD881B9208BE717000FF01D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
